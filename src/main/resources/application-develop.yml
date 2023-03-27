@@ -1,0 +1,14 @@
+info:
+  db:
+    Address: localhost
+    Name: vigenere
+    Username: vigenereuser
+    Password: vigenerepassword
+  cookie_lifetime: 999999999
+
+server:
+  port: 9290
+
+spring:
+  jpa:
+    show-sql: true

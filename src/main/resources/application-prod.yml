@@ -1,0 +1,12 @@
+info:
+  db:
+    Address: unknown
+    Name: unknown
+    Username: unknown
+    Password: unknown
+  cookie_lifetime: 3600000
+
+server:
+  port: 9290
+  servlet:
+    context-path: /vigenereCoder

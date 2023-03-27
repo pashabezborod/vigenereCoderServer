@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: prod
+  datasource:
+    url: jdbc:postgresql://${info.db.Address}:5432/${info.db.Name}
+    username: ${info.db.Username}
+    password: ${info.db.Password}
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: none
+    properties:
+      jakarta:
+        persistence:
+          sharedCache:
+            mode: ALL
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  data:
+    jdbc:
+      repositories:
+        enabled: false
+  liquibase:
+    default-schema: public
+
+server.error.include-message: always
+
+springdoc:
+  swagger-ui:
+    enabled: true
