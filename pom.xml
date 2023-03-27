@@ -79,6 +79,13 @@
 						</exclude>
 					</excludes>
 				</configuration>
+				<executions>
+					<execution>
+						<configuration>
+							<mainClass>ru.pashabezborod.vigenereCoderServer.VigenereCoderServerApplication</mainClass>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.springdoc</groupId>
