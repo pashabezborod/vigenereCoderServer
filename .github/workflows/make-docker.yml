@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: pashabezborod/vigenereServer:latest
+          tags: pashabezborod/vigenere_server:latest
